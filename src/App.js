@@ -1,4 +1,5 @@
 import './App.css';
+import TokenProvider from './token-provider/TokenProvider'
 
 function App() {
   return (
@@ -6,6 +7,7 @@ function App() {
       <header className="App-header">
         Repo commits
       </header>
+      <TokenProvider />
     </div>
   );
 }
