@@ -1,5 +1,4 @@
 import { useState,useEffect } from 'react'
-import { Octokit } from "@octokit/core";
 import './App.css';
 import TokenProvider from './token-provider/TokenProvider'
 import UserCommits from './user-commits/UserCommits'
@@ -25,7 +24,10 @@ function App() {
       <header className="App-header">
         Repo commits
       </header>
-      {commits.length>0? <UserCommits token={token} setCommits={setCommits} commits={commits}/> : <TokenProvider setToken={setToken}/>}
+      {commits.length>0? 
+        <UserCommits token={token} setCommits={setCommits} commits={commits}/> : 
+        <TokenProvider setToken={setToken}/>
+      }
     </div>
   );
 }

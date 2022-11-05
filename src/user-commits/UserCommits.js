@@ -1,6 +1,7 @@
 import './UserCommits.css';
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { fetchCommits } from '../apis';
+import moment from "moment";
 
 function UserCommits({ token, setCommits, commits }) {
 
@@ -27,7 +28,7 @@ function UserCommits({ token, setCommits, commits }) {
                                 {commit.name}
                             </div>
                             <div className="commit-date">
-                                {commit.date}
+                                {moment(commit.date, "YYYYMMDD h:mm:ss").fromNow()}
                             </div>
                         </div>
                     </div>
