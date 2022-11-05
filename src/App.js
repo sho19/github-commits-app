@@ -26,7 +26,6 @@ function App() {
         Repo commits
       </header>
       {commits.length>0? <UserCommits token={token} setCommits={setCommits} commits={commits}/> : <TokenProvider setToken={setToken}/>}
-      {/* <TokenProvider setToken={setToken}/> */}
     </div>
   );
 }
