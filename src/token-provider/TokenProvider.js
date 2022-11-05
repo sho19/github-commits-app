@@ -1,5 +1,5 @@
 import './TokenProvider.css';
-import { useState } from 'react'
+import {useState} from 'react'
 
 function TokenProvider(props) {
     const [input, setInput] = useState("");
@@ -7,15 +7,15 @@ function TokenProvider(props) {
     const handleSubmit = (event) => {
         event.preventDefault();
         if (input) {
-            sessionStorage['input'] = input;
+            sessionStorage['gitToken'] = input;
             props.setToken(input)
         }
     }
 
     return (
-        <div className="token-provider">
+        <div className="TokenProvider">
             <form onSubmit={handleSubmit}>
-                <label className='input-label'>Enter your input:
+                <label className='input-label'>Enter your token:
                     <input
                         type="text"
                         value={input}
