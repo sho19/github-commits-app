@@ -1,0 +1,11 @@
+.token-provider{
+    margin-top: 15px;
+}
+
+.input-label {
+    margin-right: 12px;
+}
+
+.input-label> input{
+    margin-left: 12px;
+}
