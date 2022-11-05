@@ -1,0 +1,29 @@
+.commits{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.commit-container{
+    margin-block: 30px 0px;
+}
+
+.commit-message{
+    font-size: 18px;
+}
+
+.commit-attributes-wrapper{
+    min-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.commit-name{
+
+}
+
+.commit-date{
+
+}
